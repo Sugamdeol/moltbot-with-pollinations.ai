@@ -7,6 +7,16 @@ services:
     envVars:
       - key: PORT
         value: "8080"
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=400"
+      - key: CLAWDBOT_SKIP_CANVAS_HOST
+        value: "1"
+      - key: CLAWDBOT_SKIP_BROWSER_CONTROL_SERVER
+        value: "1"
+      - key: CLAWDBOT_SKIP_GMAIL_WATCHER
+        value: "1"
+      - key: CLAWDBOT_SKIP_CHANNELS
+        value: "1"
       - key: SETUP_PASSWORD
         sync: false
       - key: CLAWDBOT_STATE_DIR
