@@ -48,6 +48,10 @@ export async function loadModelCatalog(params?: {
   if (modelCatalogPromise) return modelCatalogPromise;
 
   modelCatalogPromise = (async () => {
+    if (process.env.CLAWDBOT_SKIP_LOAD_MODEL_CATALOG === "1") {
+      return [];
+    }
+
     const models: ModelCatalogEntry[] = [];
     const sortModels = (entries: ModelCatalogEntry[]) =>
       entries.sort((a, b) => {
