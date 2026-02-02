@@ -8,8 +8,10 @@ services:
       - key: PORT
         value: "8080"
       - key: NODE_OPTIONS
-        value: "--max-old-space-size=400"
+        value: "--max-old-space-size=460"
       - key: CLAWDBOT_SKIP_CANVAS_HOST
+        value: "1"
+      - key: CLAWDBOT_SKIP_LOAD_MODEL_CATALOG
         value: "1"
       - key: CLAWDBOT_SKIP_BROWSER_CONTROL_SERVER
         value: "1"
