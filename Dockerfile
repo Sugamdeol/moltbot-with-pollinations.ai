@@ -37,4 +37,4 @@ ENV NODE_ENV=production
 # This reduces the attack surface by preventing container escape via root privileges
 USER node
 
-CMD ["sh", "-c", "export CLAWDBOT_GATEWAY_PORT=$PORT && node dist/index.js gateway --bind lan"]
+CMD ["sh", "-c", "export CLAWDBOT_GATEWAY_PORT=$PORT && node dist/index.js gateway --bind lan --allow-unconfigured"]
