@@ -31,6 +31,11 @@ RUN pnpm ui:install
 RUN pnpm ui:build
 
 ENV NODE_ENV=production
+ENV NODE_OPTIONS="--max-old-space-size=400"
+ENV CLAWDBOT_SKIP_CANVAS_HOST=1
+ENV CLAWDBOT_SKIP_BROWSER_CONTROL_SERVER=1
+ENV CLAWDBOT_SKIP_GMAIL_WATCHER=1
+ENV CLAWDBOT_SKIP_CHANNELS=1
 
 # Security hardening: Run as non-root user
 # The node:22-bookworm image includes a 'node' user (uid 1000)
