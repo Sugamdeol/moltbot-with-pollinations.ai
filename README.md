@@ -67,3 +67,4 @@ pm2 save
 
 ## 📜 Credits
 Based on the original [Moltbot](https://github.com/moltbot/moltbot). Customizations for free search and Pollinations AI integration by Antigravity.
+<!-- Deploy Mon Feb  2 08:49:33 UTC 2026 -->
